@@ -462,11 +462,11 @@ function handleTilt(event: DeviceOrientationEvent) {
   tiltX = event.beta || 0; // Tilt along the X-axis (front-back motion)
   tiltY = event.gamma || 0; // Tilt along the Y-axis (left-right motion)
 
-  // You may need to adjust the values based on the orientation of the device and desired sensitivity
+ 
   // Adjust the velocityX based on tiltY
   velocityX = tiltY * TILT_SENSITIVITY;
 
-  // You may also want to map the tiltX and tiltY values to a specific range if needed
+ 
 }
 
 // Function to remove the tilt event listener when the game ends or when it's no longer needed
